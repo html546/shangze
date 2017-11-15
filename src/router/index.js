@@ -8,11 +8,11 @@ export default new Router({
   routes: [
     {
       path:'/',
-      component:template
+      component:index
     },
     {
-      path:'/index',
-      component:index
+      path:'/template',
+      component:template
     }
   ]
 })

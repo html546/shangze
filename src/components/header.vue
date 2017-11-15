@@ -13,7 +13,7 @@
                     <MenuItem name="3">
                         案例
                     </MenuItem>
-                    <MenuItem name="4">
+                    <MenuItem name="4" @click.native="changeview4">
                         网站模板
                     </MenuItem>
                     <MenuItem name="5">
@@ -34,8 +34,10 @@
 export default {
     methods:{
         changeview1(){
-            alert(111);
-            this.$router.push('/index');
+            this.$router.push('/');
+        },
+        changeview2(){
+            this.$router.push('/template');
         }
     }
 };
