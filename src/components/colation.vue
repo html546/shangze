@@ -7,7 +7,7 @@
         <!-- <template>
             <input v-model="value" icon="ios-clock-outline" style="width:300px;" placeholder="请输入您要搜索的关键词 例如:按什么检索就例如什么"></input>
         </template> -->
-        <i-input v-model="value" icon="search" style="width:500px;margin:30px auto 20px;display:block;" placeholder="请输入您要搜索的关键词 例如:按什么检索就例如什么"></i-input>
+        <i-input v-model="value" icon="search" style="width:450px;margin:30px auto 20px;display:block;" placeholder="请输入您要搜索的关键词 例如:按什么检索就例如什么"></i-input>
         <div class="retrieve">
             <router-link to="">
                 <img src="../../static/computer.png" alt=""><span>PC站</span>
@@ -132,8 +132,9 @@ h1 + p {
   clear: both;
 }
 .colorfil {
-  width: 580px;
+  /* width: 580px; */
   margin: 20px auto;
+  padding-left: 10px;
 }
 .colorfil img {
   float: left;
@@ -142,7 +143,10 @@ h1 + p {
   width: 40px;
   height: 20px;
   float: left;
-  margin: 0px 20px;
+  margin: 0px 9px;
+}
+.colorfil .router-link-active:last-child p{
+  margin-right: 0px;
 }
 .colorfil p.red {
   background: #e71717;
@@ -166,7 +170,7 @@ h1 + p {
   background: #666666;
 }
 .classify {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }

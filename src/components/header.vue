@@ -4,7 +4,7 @@
             <Menu mode="horizontal" active-name="1">
                 <div class="layout-logo"></div>
                 <div class="layout-nav">
-                    <MenuItem name="1">
+                    <MenuItem name="1" @click.native="changeview1">
                         首页
                     </MenuItem>
                     <MenuItem name="2">
@@ -31,7 +31,14 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+    methods:{
+        changeview1(){
+            alert(111);
+            this.$router.push('/index');
+        }
+    }
+};
 </script>
 <style scoped>
 .layout {
