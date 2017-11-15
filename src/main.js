@@ -5,9 +5,11 @@ import App from './App'
 import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import '../my-theme/index.less'
 
 Vue.use(iView)
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
