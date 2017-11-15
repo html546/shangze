@@ -30,7 +30,7 @@
         swiperOption: {
           // swiper options 所有的配置同swiper官方api配置
           autoplay: 3000,
-          direction: 'vertical',
+          // direction: 'vertical',
           grabCursor: true,
           setWrapperSize: true,
           autoHeight: true,
@@ -69,3 +69,7 @@
     }
   }
 </script>
+<style>
+@import "~swiper/dist/css/swiper.css";
+</style>
+
