@@ -7,22 +7,22 @@
                     <MenuItem name="1" @click.native="changeview1">
                         首页
                     </MenuItem>
-                    <MenuItem name="2">
+                    <MenuItem name="2" @click.native="changeview2">
                         业务
                     </MenuItem>
-                    <MenuItem name="3">
+                    <MenuItem name="3" @click.native="changeview3">
                         案例
                     </MenuItem>
                     <MenuItem name="4" @click.native="changeview4">
                         网站模板
                     </MenuItem>
-                    <MenuItem name="5">
+                    <MenuItem name="5" @click.native="changeview5">
                         关于我们
                     </MenuItem>
-                    <MenuItem name="6">
+                    <MenuItem name="6" @click.native="changeview6">
                         联系我们
                     </MenuItem>
-                    <MenuItem name="7">
+                    <MenuItem name="7" @click.native="changeview7">
                         加入我们
                     </MenuItem>
                 </div>
@@ -37,7 +37,22 @@ export default {
             this.$router.push('/');
         },
         changeview2(){
+            this.$router.push('/business');
+        },
+        changeview4(){
             this.$router.push('/template');
+        },
+        changeview3(){
+            this.$router.push('/document');
+        },
+        changeview5(){
+            this.$router.push('/about');
+        },
+        changeview6(){
+            this.$router.push('/contact');
+        },
+        changeview7(){
+            this.$router.push('/join');
         }
     }
 };
