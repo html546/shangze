@@ -3,7 +3,7 @@
   <Carousel v-model="value1" loop >
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" >
+              <img src="../../static/banner2.png" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
@@ -13,12 +13,7 @@
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" >
-            </div>
-        </CarouselItem>
-        <CarouselItem>
-            <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" >
+              <img src="../../static/sybj.png" alt="" >
             </div>
         </CarouselItem>
     </Carousel>  

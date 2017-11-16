@@ -132,7 +132,7 @@ h1 + p {
   clear: both;
 }
 .colorfil {
-  /* width: 580px; */
+  width: 440px;
   margin: 20px auto;
   padding-left: 10px;
 }
