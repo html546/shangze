@@ -79,10 +79,11 @@ export default {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 0.67em;
 }
 .business_1 h1 {
-  margin: 0.67em 0;
+  margin: 0 0 .67em;
+  text-align: center;
+  padding-top: .67em;
 }
 .circle{
   width: 200px;
