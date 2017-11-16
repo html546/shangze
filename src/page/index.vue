@@ -76,7 +76,7 @@
   }
 </script>
 <style>
-@import "~swiper/dist/css/swiper.css";
+/* @import "~swiper/dist/css/swiper.css"; */
 .swiper-wrapper{
   width:1920px;
 }
