@@ -57,6 +57,7 @@ export default {
 .reveal h1 {
   margin: 0 0 0.67em;
   padding-top: 0.67em;
+  font-size: 40px;
 }
 .reveal button{
   outline: none;

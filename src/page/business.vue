@@ -82,8 +82,8 @@ export default {
 }
 .business_1 h1 {
   margin: 0 0 .67em;
-  text-align: center;
   padding-top: .67em;
+  font-size: 40px;
 }
 .circle{
   width: 200px;
