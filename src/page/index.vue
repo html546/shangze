@@ -1,6 +1,6 @@
 <template>
-<div style="margin-top:-60px;">
-  <Carousel v-model="value1" loop height='auto'>
+<div class="classname">
+  <Carousel v-model="value1" loop height='document.body.clientHeight'>
         <CarouselItem>
             <div class="demo-carousel">
               <img src="../../static/banner3.png" alt="" style="margin-top:-60px;">
@@ -32,14 +32,12 @@ export default {
     };
   },
   mounted(){
-    // document.getElementsByClassName('.ivu-carousel-list').innerHeight = window.innerHeight-100;
-    // console.log(window.innerHeight);
-    console.log(document.getElementsByClassName('.ivu-carousel-list')[0]);
+    
   }
 };
 </script>
 <style>
-.ivu-carousel-list{
+.classname .ivu-carousel-list{
   width: 100%;
 }
 </style>
