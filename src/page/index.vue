@@ -1,30 +1,31 @@
 <template>
 <div class="classname">
-  <Carousel v-model="value1" loop height='document.body.clientHeight'>
+  <Carousel v-model="value1" loop >
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" style="margin-top:-60px;">
+              <img src="../../static/banner3.png" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" style="margin-top:-60px;">
+              <img src="../../static/banner3.png" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" style="margin-top:-60px;">
+              <img src="../../static/banner3.png" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../../static/banner3.png" alt="" style="margin-top:-60px;">
+              <img src="../../static/banner3.png" alt="" >
             </div>
         </CarouselItem>
     </Carousel>  
 </div>
 </template>
 <script>
+import $ from 'jquery'
 export default {
   data() {
     return {
@@ -32,7 +33,8 @@ export default {
     };
   },
   mounted(){
-    
+    var height1 = $(window).height()-63;
+    $('.ivu-carousel-list').height(height1);
   }
 };
 </script>
