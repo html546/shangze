@@ -12,22 +12,24 @@
           <Row :gutter="20">
             <i-col :md="6" :lg="6">
               <img src="../../static/anli_03.png" alt="">
-              <p>项目案例名称1</p>
+              <p>创享云购</p>
             </i-col>
             <i-col :md="6" :lg="6">
               <img src="../../static/anli_05.png" alt="">
-              <p>项目案例名称1</p>
+              <p>冬咚</p>
             </i-col>
             <i-col :md="6" :lg="6">
               <img src="../../static/anli_07.png" alt="">
-              <p>项目案例名称1</p>
+              <p>省多宝</p>
             </i-col>
             <i-col :md="6" :lg="6">
               <img src="../../static/anli_09.png" alt="">
-              <p>项目案例名称1</p>
+              <p>水站商城</p>
             </i-col>
           </Row>
-          <button class="more">更多案例</button>
+          <a href="/template">
+            <button class="more">更多案例</button>
+          </a>
       </div>
   </div>
 </template>
