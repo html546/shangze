@@ -42,7 +42,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .document {
   background-image: url(../assets/document.png);
   background-repeat: no-repeat;
