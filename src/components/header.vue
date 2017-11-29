@@ -68,7 +68,7 @@ export default {
   border-radius: 3px;
   float: left;
   position: relative;
-  background-image: url(../../static/logo.png);
+  background-image: url(../assets/logo.png);
   background-repeat: no-repeat;
   background-size: 100px 30px;
   top: 15px;

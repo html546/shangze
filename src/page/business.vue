@@ -6,7 +6,7 @@
         <Row :gutter="30">
           <i-col :xs="24" :sm="12" :md="6" :lg="6">
             <div class="circle">
-              <img src="../../static/app2.png" alt="">
+              <img src="../assets/app2.png" alt="">
             </div>
             <h3>APP开发</h3>
             <p>Android/IOS原生开发</p>
@@ -19,7 +19,7 @@
           </i-col>  
           <i-col :xs="24" :sm="12" :md="6" :lg="6">
             <div class="circle">
-              <img src="../../static/wechat2.png" alt="">
+              <img src="../assets/wechat2.png" alt="">
             </div>
             <h3>微信开发</h3>
             <p>微信公众号开发</p>
@@ -32,7 +32,7 @@
           </i-col>  
           <i-col :xs="24" :sm="12" :md="6" :lg="6">
             <div class="circle">
-              <img src="../../static/site2.png" alt="">
+              <img src="../assets/site2.png" alt="">
             </div>  
             <h3>高端定制网站</h3>
             <p>企业品牌官网</p>
@@ -45,7 +45,7 @@
           </i-col>  
           <i-col :xs="24" :sm="12" :md="6" :lg="6">
             <div class="circle">
-              <img src="../../static/design2.png" alt="">
+              <img src="../assets/design2.png" alt="">
             </div>  
             <h3>设计服务</h3>
             <p>微分销平台</p>
@@ -70,7 +70,7 @@ export default {
 </script>
 <style scoped>
 .business {
-  background-image: url(../../static/gywm.png);
+  background-image: url(../assets/gywm.png);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

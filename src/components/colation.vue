@@ -10,19 +10,19 @@
         <i-input v-model="value" icon="search" style="width:450px;margin:30px auto 20px;display:block;" placeholder="请输入您要搜索的关键词 例如:按什么检索就例如什么"></i-input>
         <div class="retrieve">
             <router-link to="">
-                <img src="../../static/computer.png" alt=""><span>PC站</span>
+                <img src="../assets/computer.png" alt=""><span>PC站</span>
             </router-link>
             <router-link to="">
-                <img src="../../static/mobile.png" alt=""><span>手机站</span>
+                <img src="../assets/mobile.png" alt=""><span>手机站</span>
             </router-link>
             <router-link to="">
-                <img src="../../static/pcmobile.png" alt=""><span>响应式</span>
+                <img src="../assets/pcmobile.png" alt=""><span>响应式</span>
             </router-link>
             <div class="fix"></div>
         </div>
         <div class="colorfil">
             <router-link to="">
-                <img src="../../static/color.png" alt="">
+                <img src="../assets/color.png" alt="">
             </router-link>
             <router-link to="">
                 <p class="red"></p>
