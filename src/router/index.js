@@ -7,6 +7,7 @@ import document from '@/page/document'
 import about from '@/page/about'
 import contact from '@/page/contact'
 import join from '@/page/join'
+import detail from '@/page/detail'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +40,10 @@ export default new Router({
     {
       path:'/join',
       component:join
+    },
+    {
+      path:'/detail/:id',
+      component:detail
     }
   ]
 })

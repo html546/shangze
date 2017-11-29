@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="box" >
     <img :src="src" alt="">
     <p class="catenate">
         <span>模板号 PCB{{number}}</span>
@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-    props:['src','number','demo']
+    props:['src','number','demo'],
 };
 </script>
 <style scoped>

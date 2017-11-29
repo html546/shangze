@@ -2,6 +2,7 @@
  <div>
    <colation></colation>
    <img-show></img-show>
+   <router-view></router-view>
 </div>
 </template>
 <script>
