@@ -1,6 +1,6 @@
 <template>
   <div class="box" >
-    <img :src="src" alt="">
+    <img :src="src1" alt="">
     <p class="catenate">
         <span>模板号 PCB{{number}}</span>
         <span>{{demo}}</span>
@@ -9,7 +9,18 @@
 </template>
 <script>
 export default {
-    props:['src','number','demo'],
+    // props:['src1','number','demo'],
+    props:{
+        'src1':{
+            type:String
+        },
+        'number':{
+            type:String
+        },
+        'demo':{
+            required:true
+        }
+    }
 };
 </script>
 <style scoped>

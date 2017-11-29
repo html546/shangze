@@ -11,19 +11,19 @@
           </div>
           <Row :gutter="20">
             <i-col :md="6" :lg="6">
-              <img src="../assets/anli_03.png" alt="">
+              <img src="../assets/anli03.png" alt="">
               <p>创享云购</p>
             </i-col>
             <i-col :md="6" :lg="6">
-              <img src="../assets/anli_05.png" alt="">
+              <img src="../assets/anli05.png" alt="">
               <p>冬咚</p>
             </i-col>
             <i-col :md="6" :lg="6">
-              <img src="../assets/anli_07.png" alt="">
+              <img src="../assets/anli07.png" alt="">
               <p>省多宝</p>
             </i-col>
             <i-col :md="6" :lg="6">
-              <img src="../assets/anli_09.png" alt="">
+              <img src="../assets/anli09.png" alt="">
               <p>水站商城</p>
             </i-col>
           </Row>
