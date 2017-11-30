@@ -8,14 +8,16 @@
   </div>
 </template>
 <script>
+import bus from '../components/public';
 export default {
   mounted () {
       console.log(this.$route.params)
   },
   methods:{
     handleClick(){
-      this.$router.go(-1);
-      this.$refs.imgrow.style.display = 'block';
+      // this.$router.go(-1);
+      this.$router.push('/template');
+      bus.$emit('change');
     }
   }
 }

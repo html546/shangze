@@ -1,5 +1,5 @@
 <template>
-  <div class="imgrow" ref='imgrow'>
+  <div class="imgrow" v-if="imgshow">
                 <Row :gutter="16">
                     <i-col :lg="4" :md="6" :sm="8" :xs="12">
                         <router-link to='/template/detail/1'>
@@ -85,14 +85,25 @@
 </template>
 <script>
 import imgShow2 from './imgshow2.vue'
+import bus from './public'
 export default {
     components:{
         imgShow2
     },
+    data(){
+        return {
+            imgshow:true
+        }
+    },
+    mounted(){
+        bus.$on('change',()=>{
+            this.imgshow = true;
+            console.log(this.imgshow);
+        })
+    },
     methods:{
         handleClick(){
-            console.log(132);
-            this.$refs.imgrow.style.display = 'none';
+            this.imgshow = false;
         }
     }
 };
