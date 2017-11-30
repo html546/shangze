@@ -63,7 +63,8 @@
 import $ from "jquery";
 export default {
   mounted() {
-    var height1 = $(window).height() - 62;
+    // var height1 = $(window).height() - 62;
+        // var height1 = $(window)[0].scrollHeight;
     $(".about").height(height1);
   }
 };
@@ -74,6 +75,7 @@ export default {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+    height: calc(100% - 63px);
 }
 .about1{
   width: 1200px;

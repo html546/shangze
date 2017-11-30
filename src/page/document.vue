@@ -37,7 +37,8 @@
 import $ from "jquery";
 export default {
   mounted() {
-    var height1 = $(window).height() - 42;
+    // var height1 = $(window).height() - 42;
+    // var height1 = $(window)[0].scrollHeight;
     $(".document").height(height1);
   }
 };
@@ -49,6 +50,7 @@ export default {
   background-size: cover;
   background-position: center;
   width: 100%;
+    height: calc(100% - 63px);
 }
 .reveal {
   width: 1200px;

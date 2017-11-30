@@ -152,7 +152,8 @@ export default {
       carder
   },
   mounted() {
-    var height1 = $(window).height() - 62;
+    // var height1 = $(window).height() - 62;
+    // var height1 = $(window)[0].scrollHeight;
     $(".join").height(height1);
   },
   data(){
@@ -173,6 +174,7 @@ export default {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+    height: calc(100% - 63px);
 }
 .join1 {
   width: 100%;

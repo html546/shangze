@@ -28,7 +28,8 @@ export default {
     };
   },
   mounted(){
-    var height1 = $(window).height()-63;
+    // var height1 = $(window).height()-63;
+    // var height1 = $(window)[0].scrollHeight;
     $('.ivu-carousel-list').height(height1);
   }
 };
@@ -36,5 +37,6 @@ export default {
 <style>
 .classname .ivu-carousel-list{
   width: 100%;
+  height: calc(100% - 63px);
 }
 </style>

@@ -63,7 +63,8 @@
 import $ from "jquery";
 export default {
   mounted() {
-    var height1 = $(window).height() - 62;
+    // var height1 = $(window).height() - 62;
+    // var height1 = $(window)[0].scrollHeight;
     $(".business").height(height1);
   }
 };
@@ -71,9 +72,10 @@ export default {
 <style scoped>
 .business {
   background-image: url(../assets/gywm.png);
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
+  height: calc(100% - 63px);
 }
 .business_1 {
   width: 1200px;
