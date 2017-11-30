@@ -19,7 +19,13 @@ export default new Router({
     },
     {
       path:'/template',
-      component:template
+      component:template,
+      children:[
+        {
+          path:'detail/:id',
+          component:detail
+        }
+      ]
     },
     {
       path:'/business',
@@ -41,9 +47,9 @@ export default new Router({
       path:'/join',
       component:join
     },
-    {
+    /* {
       path:'/detail/:id',
       component:detail
-    }
+    } */
   ]
 })

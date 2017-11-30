@@ -1,8 +1,8 @@
 <template>
  <div>
    <colation></colation>
+   <router-view />
    <img-show></img-show>
-   <router-view></router-view>
 </div>
 </template>
 <script>
