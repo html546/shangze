@@ -37,7 +37,7 @@
 import $ from "jquery";
 export default {
   mounted() {
-    var height1 = $(window).height() - 62;
+    var height1 = $(window).height() - 42;
     $(".document").height(height1);
   }
 };
