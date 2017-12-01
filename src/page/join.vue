@@ -154,7 +154,7 @@ export default {
   mounted() {
     // var height1 = $(window).height() - 62;
     // var height1 = $(window)[0].scrollHeight;
-    $(".join").height(height1);
+    // $(".join").height(height1);
   },
   data(){
       return {

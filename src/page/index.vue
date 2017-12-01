@@ -30,7 +30,7 @@ export default {
   mounted(){
     // var height1 = $(window).height()-63;
     // var height1 = $(window)[0].scrollHeight;
-    $('.ivu-carousel-list').height(height1);
+    // $('.ivu-carousel-list').height(height1);
   }
 };
 </script>

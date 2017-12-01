@@ -17,7 +17,7 @@ export default {
   mounted() {
     // var height1 = $(window).height() - 62;
     // var height1 = $(window)[0].scrollHeight;
-    $(".contact").height(height1);
+    // $(".contact").height(height1);
   }
 };
 </script>

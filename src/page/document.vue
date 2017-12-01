@@ -39,7 +39,7 @@ export default {
   mounted() {
     // var height1 = $(window).height() - 42;
     // var height1 = $(window)[0].scrollHeight;
-    $(".document").height(height1);
+    // $(".document").height(height1);
   }
 };
 </script>
