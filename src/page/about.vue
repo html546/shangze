@@ -1,5 +1,5 @@
 <template>
-  <div class="about" v-scroll="scrollFn">
+  <div class="about">
     <div class="about1">
       <h1>关于我们</h1>
       <p>ABOUT US</p>
@@ -66,16 +66,6 @@ export default {
     // var height1 = $(window).height() - 62;
         // var height1 = $(window)[0].scrollHeight;
     // $(".about").height(height1);
-  },
-  methods: {
-    scrollFn: function(direction) {
-      console.log(direction);
-      if (direction === "down") {
-        this.$router.push("/contact");
-      } else if (direction === "up") {
-        this.$router.push("/template");
-      }
-    }
   }
 };
 </script>

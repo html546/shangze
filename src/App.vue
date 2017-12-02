@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import './assets/css/normailze.css'
 import './assets/css/animate.min.css';
 import appHead from './components/header.vue'
@@ -19,15 +18,6 @@ export default {
     appHead
   },
 }
-Vue.directive('scroll',{
-  inserted:function(el,binding){
-    var cb = binding.value;
-    el.addEventListener('mousewheel',function(e){
-      var direction = e.deltaY>0?'down':'up';
-      cb(direction);
-    })
-  }
-})
 </script>
 
 <style>

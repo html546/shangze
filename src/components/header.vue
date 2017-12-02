@@ -1,28 +1,28 @@
 <template>
   <div>
       <div class="layout">
-            <Menu mode="horizontal" active-name="1">
+            <Menu mode="horizontal" active-name="1" @on-select="changeview">
                 <div class="layout-logo"></div>
                 <div class="layout-nav">
-                    <MenuItem name="1" @click.native="changeview1">
+                    <MenuItem name="/">
                         首页
                     </MenuItem>
-                    <MenuItem name="2" @click.native="changeview2">
+                    <MenuItem name="/business" >
                         业务
                     </MenuItem>
-                    <MenuItem name="3" @click.native="changeview3">
+                    <MenuItem name="/template">
                         案例
                     </MenuItem>
-                    <MenuItem name="4" @click.native="changeview4">
+                    <MenuItem name="/document">
                         网站模板
                     </MenuItem>
-                    <MenuItem name="5" @click.native="changeview5">
+                    <MenuItem name="/about">
                         关于我们
                     </MenuItem>
-                    <MenuItem name="6" @click.native="changeview6">
+                    <MenuItem name="/contact">
                         联系我们
                     </MenuItem>
-                    <MenuItem name="7" @click.native="changeview7">
+                    <MenuItem name="/join">
                         加入我们
                     </MenuItem>
                 </div>
@@ -33,26 +33,8 @@
 <script>
 export default {
     methods:{
-        changeview1(){
-            this.$router.push('/');
-        },
-        changeview2(){
-            this.$router.push('/business');
-        },
-        changeview4(){
-            this.$router.push('/template');
-        },
-        changeview3(){
-            this.$router.push('/document');
-        },
-        changeview5(){
-            this.$router.push('/about');
-        },
-        changeview6(){
-            this.$router.push('/contact');
-        },
-        changeview7(){
-            this.$router.push('/join');
+        changeview(name){
+            this.$router.push(name);
         }
     }
 };

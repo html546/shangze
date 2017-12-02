@@ -1,5 +1,5 @@
 <template>
-  <div class="document" v-scroll="scrollFn">
+  <div class="document">
       <div class="reveal">
           <h1>案例展示</h1>
           <p>CASE DEMONSTRATION</p>
@@ -40,16 +40,6 @@ export default {
     // var height1 = $(window).height() - 42;
     // var height1 = $(window)[0].scrollHeight;
     // $(".document").height(height1);
-  },
-  methods:{
-    scrollFn:function(direction){
-      console.log(direction);
-      if(direction==='down'){
-        this.$router.push('/template');
-      }else if(direction==='up'){
-        this.$router.push('/business');
-      }
-    }
   }
 };
 </script>

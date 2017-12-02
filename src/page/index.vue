@@ -1,5 +1,5 @@
 <template>
-<div class="classname" v-scroll="scrollFn">
+<div class="classname">
   <Carousel v-model="value1" loop autoplay>
         <CarouselItem>
             <div class="demo-carousel">
@@ -34,14 +34,6 @@ export default {
     // var height1 = $(window).height()-63;
     // var height1 = $(window)[0].scrollHeight;
     // $('.ivu-carousel-list').height(height1);
-  },
-  methods:{
-    scrollFn:function(direction){
-      console.log(direction);
-      if(direction==='down'){
-        this.$router.push('/business');
-      }
-    }
   }
 };
 

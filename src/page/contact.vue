@@ -1,5 +1,5 @@
 <template>
-  <div class="contact" v-scroll="scrollFn">
+  <div class="contact">
     <div class="contact1">
       <h3>联系我们</h3>
       <p>CONTACT US</p>
@@ -18,16 +18,6 @@ export default {
     // var height1 = $(window).height() - 62;
     // var height1 = $(window)[0].scrollHeight;
     // $(".contact").height(height1);
-  },
-  methods: {
-    scrollFn: function(direction) {
-      console.log(direction);
-      if (direction === "down") {
-        this.$router.push("/join");
-      } else if (direction === "up") {
-        this.$router.push("/about");
-      }
-    }
   }
 };
 </script>

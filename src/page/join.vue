@@ -1,5 +1,5 @@
 <template>
- <div class="join" v-scroll="scrollFn">
+ <div class="join">
      <div class="join1">
          <h1>加入我们</h1>
          <p>JOIN US</p>
@@ -161,14 +161,6 @@ export default {
           slde5:false,
           slde6:false
       }
-  },
-  methods: {
-    scrollFn: function(direction) {
-      console.log(direction);
-      if (direction === "up") {
-        this.$router.push("/contact");
-      }
-    }
   }
 };
 </script>
