@@ -3,16 +3,19 @@
   <Carousel v-model="value1" loop >
         <CarouselItem>
             <div class="demo-carousel">
+              <img src="../assets/sywx.png" class="img3" alt="">
               <img src="../assets/banner2.jpg" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
+              <img src="../assets/sywz.png" class="img3" alt="">
               <img src="../assets/banner3.jpg" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
+              <img src="../assets/syapp.png" class="img3" alt="">
               <img src="../assets/sybj.jpg" alt="" >
             </div>
         </CarouselItem>
@@ -37,5 +40,15 @@ export default {
 <style>
 .classname .ivu-carousel-list{
   width: 100%;
+}
+.demo-carousel{
+  position: relative;
+}
+.img3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
 }
 </style>

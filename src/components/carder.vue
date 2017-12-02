@@ -35,7 +35,7 @@ export default {
   position: absolute;
   z-index: 10;
   left: 20%;
-  top: -10%;
+  top: 0%;
 }
 .fade-enter-active,
 .fade-leave-active {
