@@ -170,7 +170,7 @@ export default {
 </script>
 <style scoped>
 .join {
-  background-image: url(../assets/jrwm.png);
+  background-image: url(../assets/jrwm.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

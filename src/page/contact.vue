@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 .contact{
-  background-image: url(../assets/lxwm.png);
+  background-image: url(../assets/lxwm.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

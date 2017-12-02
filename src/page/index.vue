@@ -3,17 +3,17 @@
   <Carousel v-model="value1" loop >
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../assets/banner2.png" alt="" >
+              <img src="../assets/banner2.jpg" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../assets/banner3.png" alt="" >
+              <img src="../assets/banner3.jpg" alt="" >
             </div>
         </CarouselItem>
         <CarouselItem>
             <div class="demo-carousel">
-              <img src="../assets/sybj.png" alt="" >
+              <img src="../assets/sybj.jpg" alt="" >
             </div>
         </CarouselItem>
     </Carousel>  
