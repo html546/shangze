@@ -1,5 +1,5 @@
 <template>
- <div class="join">
+ <div class="join" v-scroll="scrollFn">
      <div class="join1">
          <h1>加入我们</h1>
          <p>JOIN US</p>
@@ -150,9 +150,7 @@ export default {
       carder
   },
   mounted() {
-    // var height1 = $(window).height() - 62;
-    // var height1 = $(window)[0].scrollHeight;
-    // $(".join").height(height1);
+    
   },
   data(){
       return {
@@ -163,6 +161,14 @@ export default {
           slde5:false,
           slde6:false
       }
+  },
+  methods: {
+    scrollFn: function(direction) {
+      console.log(direction);
+      if (direction === "up") {
+        this.$router.push("/contact");
+      }
+    }
   }
 };
 </script>

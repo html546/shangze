@@ -1,5 +1,5 @@
 <template>
-  <div class="document">
+  <div class="document" v-scroll="scrollFn">
       <div class="reveal">
           <h1>案例展示</h1>
           <p>CASE DEMONSTRATION</p>
@@ -27,9 +27,9 @@
               <p>水站商城</p>
             </i-col>
           </Row>
-          <a href="/template">
+          <router-link to="/template">
             <button class="more">更多案例</button>
-          </a>
+          </router-link>
       </div>
   </div>
 </template>
@@ -40,6 +40,16 @@ export default {
     // var height1 = $(window).height() - 42;
     // var height1 = $(window)[0].scrollHeight;
     // $(".document").height(height1);
+  },
+  methods:{
+    scrollFn:function(direction){
+      console.log(direction);
+      if(direction==='down'){
+        this.$router.push('/template');
+      }else if(direction==='up'){
+        this.$router.push('/business');
+      }
+    }
   }
 };
 </script>

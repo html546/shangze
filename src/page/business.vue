@@ -1,5 +1,5 @@
 <template>
-  <div class="business">
+  <div class="business" v-scroll="scrollFn">
       <div class="business_1">
         <h1>我们的服务</h1>
         <p>OUR SERVICE</p>
@@ -66,6 +66,16 @@ export default {
     // var height1 = $(window).height() - 62;
     // var height1 = $(window)[0].scrollHeight;
     // $(".business").height(height1);
+  },
+  methods:{
+    scrollFn:function(direction){
+      console.log(direction);
+      if(direction==='down'){
+        this.$router.push('/document');
+      }else if(direction==='up'){
+        this.$router.push('/');
+      }
+    }
   }
 };
 </script>

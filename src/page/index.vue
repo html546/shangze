@@ -1,6 +1,6 @@
 <template>
-<div class="classname">
-  <Carousel v-model="value1" loop >
+<div class="classname" v-scroll="scrollFn">
+  <Carousel v-model="value1" loop autoplay>
         <CarouselItem>
             <div class="demo-carousel">
               <img src="../assets/sywx.png" class="img3" alt="">
@@ -23,7 +23,7 @@
 </div>
 </template>
 <script>
-import $ from 'jquery'
+import $ from 'jquery';
 export default {
   data() {
     return {
@@ -34,8 +34,17 @@ export default {
     // var height1 = $(window).height()-63;
     // var height1 = $(window)[0].scrollHeight;
     // $('.ivu-carousel-list').height(height1);
+  },
+  methods:{
+    scrollFn:function(direction){
+      console.log(direction);
+      if(direction==='down'){
+        this.$router.push('/business');
+      }
+    }
   }
 };
+
 </script>
 <style>
 .classname .ivu-carousel-list{
