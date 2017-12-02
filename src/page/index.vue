@@ -37,6 +37,5 @@ export default {
 <style>
 .classname .ivu-carousel-list{
   width: 100%;
-  height: calc(100% - 63px);
 }
 </style>
